@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Share</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+
 </head>
 <body>
     <div class="container">
@@ -13,18 +16,25 @@
                 <img src="https://image.flaticon.com/icons/svg/1071/1071623.svg" style="width: 60px;">
             </div>
             <div id="food">
-                <img src="" alt="">
+                <img src="https://media.istockphoto.com/photos/japanese-food-picture-id917919440?k=6&m=917919440&s=612x612&w=0&h=sr2wMzWpBLmGhAK8nGNb85HoY6SvudHvIcXRaAkOQVI=" alt="ramen photo" style="width: 120px;">
             </div>
+        </div>
+        <div class="share-link">
+            <p class="share">Share:</p>
+            <input class="input" type="text" value="https://www.ubereats.com/ca/game" id="share-url">
+            <button class="clipboard" onclick="copyUrl()"><i class="fas fa-clipboard"></i></button>
         </div>
     </div>
     <script>
-        function copyToClipboard(text) {
-            var input = document.body.appendChild(document.createElement("input"));
-            input.value = text;
-            input.focus();
-            input.select();
-            document.execCommand('copy');
-            input.parentNode.removeChild(input);
+        function copyUrl() {
+            
+            var copyText = document.getElementById("myInput");
+
+            copyText.select();
+
+            document.execCommand("copy");
+
+            alert("Copied the text: " + copyText.value);
         }
     </script>
 </body>
