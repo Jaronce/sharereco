@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share</title>
+</head>
+<body>
+    <div class="container">
+        <h3>Hey, share your recommended food to your friend!</h3>
+        <div class="reco">
+            <div id="sparkle" class="crown-rank">
+                <img src="https://image.flaticon.com/icons/svg/1071/1071623.svg" style="width: 60px;">
+            </div>
+            <div id="food">
+                <img src="" alt="">
+            </div>
+        </div>
+    </div>
+    <script>
+        function copyToClipboard(text) {
+            var input = document.body.appendChild(document.createElement("input"));
+            input.value = text;
+            input.focus();
+            input.select();
+            document.execCommand('copy');
+            input.parentNode.removeChild(input);
+        }
+    </script>
+</body>
+</html>
