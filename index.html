@@ -22,13 +22,13 @@
         <div class="share-link">
             <p class="share">Share:</p>
             <input class="input" type="text" value="https://www.ubereats.com/ca/game" id="share-url">
-            <button class="clipboard" onclick="copyUrl()"><i class="fas fa-clipboard"></i></button>
+            <button id="clipboard" onclick="copyUrl()"><i class="fas fa-clipboard"></i></button>
         </div>
     </div>
     <script>
         function copyUrl() {
             
-            var copyText = document.getElementById("myInput");
+            var copyText = document.getElementById("clipboard");
 
             copyText.select();
 
