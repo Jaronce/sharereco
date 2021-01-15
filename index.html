@@ -18,9 +18,7 @@
     />
   </head>
   <body>
-    <div class="background">
-
-    </div>
+    <div class="background"></div>
     <div class="container">
       <h3 class="uberfont">
         Hey, share your #UberCup result with your friends!
@@ -28,11 +26,12 @@
       <div class="reco-container">
         <div class="reco reco-1">
           <div id="food">
-               <div id="sparkle" class="crown-rank">
-            <img
-              class="crown-photo" src="https://image.flaticon.com/icons/svg/1071/1071623.svg"
-            />
-          </div>
+            <div id="sparkle" class="crown-rank">
+              <img
+                class="crown-photo"
+                src="https://image.flaticon.com/icons/svg/1071/1071623.svg"
+              />
+            </div>
             <img
               src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https://static.onecms.io/wp-content/uploads/sites/9/2020/01/ramen-guide-miso-FT-BLOG0120.jpg"
               alt="ramen photo"
@@ -42,28 +41,29 @@
           </div>
         </div>
         <div class="reco reco-2">
-
           <div id="food">
-               <div id="sparkle" class="crown-rank">
-            <img
-              class="crown-photo" src="https://image.flaticon.com/icons/svg/1071/1071623.svg"
-            />
-          </div>
+            <div id="sparkle" class="crown-rank">
+              <img
+                class="crown-photo"
+                src="https://image.flaticon.com/icons/svg/1071/1071623.svg"
+              />
+            </div>
             <img
               src="https://cdn.pixabay.com/photo/2020/02/28/12/40/bibimbap-4887394_1280.jpg"
               alt="ramen photo"
               class="food-photo"
             />
-           <p>Korea 🇰🇷</p>
+            <p>Korea 🇰🇷</p>
           </div>
         </div>
         <div class="reco reco-3">
           <div id="food">
-          <div id="sparkle" class="crown-rank">
-            <img
-              class="crown-photo" src="https://image.flaticon.com/icons/svg/1071/1071623.svg"
-            />
-          </div>
+            <div id="sparkle" class="crown-rank">
+              <img
+                class="crown-photo"
+                src="https://image.flaticon.com/icons/svg/1071/1071623.svg"
+              />
+            </div>
             <img
               src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/slideshows/best_and_worst_thai_dishes_slideshow/1800x1200_slideshow_best_and_worst_thai_dishes_for_your_health.jpg"
               alt="ramen photo"
@@ -81,7 +81,11 @@
           value="https://jaronce.github.io/sharelanding/"
           id="share-url"
         />
-        <button id="clipboard" class="btn btn-primary btn-lg onclick="copyUrl()">
+        <button
+          id="clipboard"
+          class="btn btn-primary btn-lg"
+          onclick="copyUrl()"
+        >
           <i class="fas fa-clipboard"></i>
         </button>
       </div>
@@ -89,11 +93,8 @@
     <script>
       function copyUrl() {
         var copyText = document.getElementById("input");
-
         copyText.select();
-
         document.execCommand("copy");
-
         alert("Copied the text: " + copyText.value);
       }
     </script>
