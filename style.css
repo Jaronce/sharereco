@@ -1,3 +1,9 @@
+body {
+  background: url(wallpaper.jpg);
+  background-size: cover;
+  opacity: 0.5;
+}
+
 .container {
   display: flex;
   align-items: center;
@@ -13,4 +19,24 @@
 
 .share {
   margin-right: 10px;
+}
+
+@font-face {
+  font-family: "Uber Move Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Uber Move Medium"),
+    url("./fonts/UberMoveMedium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Uber Move Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Uber Move Bold"), url("./fonts/UberMoveBold.woff") format("woff");
+}
+
+.uberfont {
+  font-family: "Uber Move Medium";
+  color: white;
 }
